@@ -1,0 +1,50 @@
+# Lab 8: How to Create a VLAN in a Cisco Switch
+
+## 🌐 Network Topology Diagram
+Below is the local network topology mapped and configured within Cisco Packet Tracer:
+
+![Network Diagram](topology.png)
+
+---
+
+## 📝 Objective & Scenario
+This lab demonstrates how to configure logical segmentation on a standalone Cisco 2960 layer 2 switch. By creating Virtual Local Area Networks (VLANs), we group the connected end-user host machines (PC0 and Laptop0 through Laptop4) into distinct broadcast domains to isolate network traffic and enhance security posture at the data link layer.
+
+---
+
+## 💻 Technical CLI Configuration Steps
+The following configuration commands were executed via the Switch Console to establish the local VLAN structures:
+
+```cisco
+# Elevating access to privilege exec mode
+Switch> enable
+Switch# configure terminal
+
+# Initializing VLANs
+Switch(config)# vlan 10
+Switch(config-vlan)# name Engineering_Data
+Switch(config-vlan)# exit
+
+Switch(config)# vlan 20
+Switch(config-vlan)# name Staff_Wireless
+Switch(config-vlan)# exit
+
+# Mapping host interfaces to access ports
+Switch(config)# interface range fastEthernet 0/1 - 3
+Switch(config-if-range)# switchport mode access
+Switch(config-if-range)# switchport access vlan 10
+Switch(config-if-range)# switchport port-security
+Switch(config-if-range)# exit
+
+Switch(config)# interface range fastEthernet 0/4 - 6
+Switch(config-if-range)# switchport mode access
+Switch(config-if-range)# switchport access vlan 20
+Switch(config-if-range)# exit
+```
+
+---
+
+## ✅ Administrative Verification
+To ensure interfaces were assigned correctly, administrative monitoring was executed:
+* `show vlan brief` - Confirmed structural mapping across FastEthernet ports `Fa0/1` through `Fa0/6`.
+* `show interfaces status` - Verified active physical up-link state for all host nodes.
