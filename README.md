@@ -1,7 +1,42 @@
-# Tobekile Mazula | IT Support & Systems Portfolio
+I'm an IT Support professional with hands-on experience in Windows administration, Active Directory, Microsoft 365, networking, virtualization, and cybersecurity incident response. I am currently expanding my skills toward Network Engineering through practical enterprise simulations and home lab projects.
 
-I'm an aspiring IT Support and Network Engineer with hands-on experience in Windows administration, Active Directory, Microsoft 365, networking, virtualization, and cybersecurity incident response.
+My goal is to continuously expand this portfolio with real-world troubleshooting scenarios, enterprise administration tasks, networking projects, and home lab implementations that reflect industry best practices.
 
-This portfolio showcases practical troubleshooting, enterprise simulations, home lab projects, and technical documentation that demonstrate my ability to diagnose, resolve, and document real-world IT issues.
+## 🏆 Professional Certifications
 
----My goal is to continuously expand this portfolio with real-world troubleshooting scenarios, enterprise administration tasks, networking projects, and home lab implementations that reflect industry best practices.
+- Google IT Support Professional Certificate
+- Network Technician Career Path Certificate (Cisco Systems Focused)
+
+
+## 🛠 Technical Skills
+
+### Operating Systems
+- Windows 10
+- Windows 11
+- Ubuntu Linux
+
+### Identity & Administration
+- Active Directory
+- Microsoft 365
+- Azure Active Directory
+- BitLocker
+- Multi-Factor Authentication (MFA)
+
+### Networking
+- TCP/IP
+- DNS
+- DHCP
+- VLANs
+- Cisco Packet Tracer
+
+### Virtualization
+- Oracle VirtualBox
+- Windows Virtual Machines
+- Ubuntu Virtual Machines
+
+### Troubleshooting
+- Hardware Diagnostics
+- Software Installation
+- Printer Troubleshooting
+- User Account Management
+- Remote Support
