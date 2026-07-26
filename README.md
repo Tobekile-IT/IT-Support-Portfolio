@@ -45,4 +45,30 @@ My goal is to continuously expand this portfolio with real-world troubleshooting
 - User Account Management
 - Remote Support
 
----
+## 🖥️ IT Support Projects
+
+The following projects demonstrate my hands-on troubleshooting, system administration, networking, and security skills through enterprise simulations and home lab environments.
+
+### 🖥️ Help Desk & System Administration
+
+- **Customer PC Won't Turn On**
+  - Diagnosed hardware failure using systematic troubleshooting techniques.
+  - [View Project](./Lab%201%20Customer%20PC%20Won%27t%20Turn%20On)
+
+- **Enterprise Identity & Access Management**
+  - Managed Active Directory user accounts, identity updates, and access permissions.
+  - [View Project](./Lab%202%20Enterprise%20Identity%20and%20Access%20Management)
+
+- **BitLocker Recovery**
+  - Verified user identity, retrieved BitLocker recovery key, and restored encrypted system access.
+  - [View Project](./Ticket%2002%20-%20BitLocker%20Recovery%20Key)
+
+- **Cybersecurity Incident Response**
+  - Investigated security alerts, isolated threats, and documented incident response procedures.
+  - [View Project](./Lab%2015%20Incident%20Response%20-%20Suspicious%20Activity)
+
+### 🌐 Networking
+
+- **Cisco VLAN Segmentation**
+  - Configured VLANs and verified communication between segmented networks.
+  - [View Project](./Lab%208%20-%20How%20to%20create%20VLAN%20in%20Cisco)
