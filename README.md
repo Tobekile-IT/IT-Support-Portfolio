@@ -6,9 +6,11 @@ My goal is to continuously expand this portfolio with real-world troubleshooting
 
 ## 🏆 Professional Certifications
 
-- Google IT Support Professional Certificate
-- Network Technician Career Path Certificate (Cisco Systems Focused)
+- **Google IT Support Professional Certificate**
+  - Covered IT support fundamentals, operating systems, networking, system administration, security, and troubleshooting.
 
+- **Network Technician Career Path Certificate (Cisco Systems Focused)**
+  - Covered networking fundamentals, switching, routing concepts, TCP/IP, VLANs, and enterprise network troubleshooting.
 
 ## 🛠 Technical Skills
 
@@ -33,8 +35,8 @@ My goal is to continuously expand this portfolio with real-world troubleshooting
 
 ### Virtualization
 - Oracle VirtualBox
-- Windows Virtual Machines
-- Ubuntu Virtual Machines
+- Windows 10 Virtual Machine
+- Ubuntu Virtual Machine
 
 ### Troubleshooting
 - Hardware Diagnostics
@@ -42,3 +44,5 @@ My goal is to continuously expand this portfolio with real-world troubleshooting
 - Printer Troubleshooting
 - User Account Management
 - Remote Support
+
+---
