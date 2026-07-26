@@ -72,3 +72,40 @@ The following projects demonstrate my hands-on troubleshooting, system administr
 - **Cisco VLAN Segmentation**
   - Configured VLANs and verified communication between segmented networks.
   - [View Project](./Lab%208%20-%20How%20to%20create%20VLAN%20in%20Cisco)
+
+# 🧪 Home Lab
+
+I continuously build and expand my own virtual lab environment to strengthen my Windows administration, networking, virtualization, and troubleshooting skills.
+
+## Current Lab
+
+- ✅ Windows 10 Virtual Machine (Oracle VirtualBox)
+- ✅ Ubuntu Linux Virtual Machine
+- ✅ Windows Installation & Deployment
+- ✅ Virtual Machine Configuration
+- ✅ ISO Installation & Virtual Disk Management
+
+## Planned Lab Expansion
+
+- 🔄 Windows Server 2022
+- 🔄 Active Directory Domain Services (AD DS)
+- 🔄 DNS Server
+- 🔄 DHCP Server
+- 🔄 Group Policy Management
+- 🔄 Domain User Management
+- 🔄 File & Print Services
+- 🔄 Windows Server Backup
+
+# 📬 Contact
+
+📧 Email: Tobekilemazula111@gmail.com
+
+💼 LinkedIn:
+www.linkedin.com/in/tobekile-mazula-39b04a1ba
+
+💻 GitHub:
+https://github.com/Tobekile-IT
+
+⭐ Thank you for visiting my portfolio.
+
+This repository is continuously updated with new projects, troubleshooting documentation, networking labs, and home lab implementations as I continue growing my IT career.
