@@ -26,13 +26,6 @@ My goal is to continuously expand this portfolio with real-world troubleshooting
 - BitLocker
 - Multi-Factor Authentication (MFA)
 
-### Networking
-- TCP/IP
-- DNS
-- DHCP
-- VLANs
-- Cisco Packet Tracer
-
 ### Virtualization
 - Oracle VirtualBox
 - Windows 10 Virtual Machine
