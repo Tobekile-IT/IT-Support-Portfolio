@@ -42,35 +42,34 @@ My goal is to continuously expand this portfolio with real-world troubleshooting
 
 The following projects demonstrate my hands-on troubleshooting, system administration, networking, and security skills through enterprise simulations and home lab environments.
 
-### 🖥️ Help Desk & System Administration
+## 🖥️ Help Desk & System Administration
 
-- **Customer PC Won't Turn On**
-  - Diagnosed hardware failure using systematic troubleshooting techniques.
-  - [View Project](./Lab%201%20Customer%20PC%20Won%27t%20Turn%20On)
+Hands-on Service Desk tickets completed through practical simulations, covering hardware troubleshooting, Active Directory, Microsoft 365 administration, account management, cybersecurity incident response, endpoint support, and enterprise IT troubleshooting.
 
-- **Enterprise Identity & Access Management**
-  - Managed Active Directory user accounts, identity updates, and access permissions.
-  - [View Project](./Lab%202%20Enterprise%20Identity%20and%20Access%20Management)
+### Completed Tickets
 
-- **BitLocker Recovery**
-  - Verified user identity, retrieved BitLocker recovery key, and restored encrypted system access.
-  - [View Project](./Ticket%2002%20-%20BitLocker%20Recovery%20Key)
+- **Ticket 01** – Customer PC Won't Turn On
+- **Ticket 02** – Enterprise Identity and Access Management
+- **Ticket 03** – BitLocker Recovery Key
+- **Ticket 04** – VPN Connection Drops Intermittently
+- **Ticket 05** – Incident Response – Suspected Account Compromise
+- **Ticket 06** – Phishing Email Malware Incident Response
+- **Ticket 07** – Browser Scareware Removal
+- **Ticket 08** – Warehouse Laptop Replacement and Deployment
 
-- **Cybersecurity Incident Response**
-  - Investigated security alerts, isolated threats, and documented incident response procedures.
-  - [View Project](./Lab%2015%20Incident%20Response%20-%20Suspicious%20Activity)
+---
 
-### 🌐 Networking
+## 🖥️ Windows Server Home Lab
 
-- **Cisco VLAN Segmentation**
-  - Configured VLANs and verified communication between segmented networks.
-  - [View Project](./Lab%208%20-%20How%20to%20create%20VLAN%20in%20Cisco)
+A dedicated Windows Server home lab built to strengthen my practical system administration skills through hands-on configuration, management, and troubleshooting of enterprise technologies.
 
-# 🧪 Home Lab
+### Current Projects
 
-I continuously build and expand my own virtual lab environment to strengthen my Windows administration, networking, virtualization, and troubleshooting skills.
+- **Lab 01** – Active Directory Organizational Units (OU) and User Account Management
 
-## Current Lab
+*Additional Windows Server home lab projects will be added as the environment continues to grow.*
+
+## 🧪 Home Lab Environment
 
 - ✅ Windows 10 Virtual Machine (Oracle VirtualBox)
 - ✅ Ubuntu Linux Virtual Machine
