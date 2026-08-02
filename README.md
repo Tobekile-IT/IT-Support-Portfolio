@@ -40,11 +40,11 @@ My goal is to continuously expand this portfolio with real-world troubleshooting
 
 ## 🖥️ IT Support Projects
 
-The following projects demonstrate my hands-on troubleshooting, system administration, networking, and security skills through enterprise simulations and home lab environments.
+The following projects demonstrate my hands-on experience in IT Support, system administration, Windows Server, networking, cybersecurity, and enterprise troubleshooting through practical simulations and home lab environments. Each project reflects real-world scenarios designed to strengthen technical skills and professional problem-solving.
 
 ## 🖥️ Help Desk & System Administration
 
-Hands-on Service Desk tickets completed through practical simulations, covering hardware troubleshooting, Active Directory, Microsoft 365 administration, account management, cybersecurity incident response, endpoint support, and enterprise IT troubleshooting.
+Hands-on Service Desk tickets completed through practical simulations, covering hardware troubleshooting, Active Directory, Microsoft 365 administration, account management, cybersecurity incident response, endpoint support, enterprise IT troubleshooting, email client support, hardware peripherals, and remote connectivity troubleshooting.
 
 ### Completed Tickets
 
@@ -56,8 +56,9 @@ Hands-on Service Desk tickets completed through practical simulations, covering 
 - **Ticket 06** – Phishing Email Malware Incident Response
 - **Ticket 07** – Browser Scareware Removal
 - **Ticket 08** – Warehouse Laptop Replacement and Deployment
-
----
+- **Ticket 09** – Mail Client Attachment Download Failure and Application Repair
+- **Ticket 10** – External Monitors Went Black After Desk Relocation
+- **Ticket 11** – Remote Connection Drops Due to ISP Connectivity Issues
 
 ## 🖥️ Windows Server Home Lab
 
