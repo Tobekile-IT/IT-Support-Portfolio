@@ -7,19 +7,23 @@ My goal is to continuously expand this portfolio with real-world troubleshooting
 ## 🏆 Professional Certifications
 
 - **Google IT Support Professional Certificate**
+
   - Covered IT support fundamentals, operating systems, networking, system administration, security, and troubleshooting.
 
 - **Network Technician Career Path Certificate (Cisco Systems Focused)**
+
   - Covered networking fundamentals, switching, routing concepts, TCP/IP, VLANs, and enterprise network troubleshooting.
 
 ## 🛠 Technical Skills
 
 ### Operating Systems
+
 - Windows 10
 - Windows 11
 - Ubuntu Linux
 
 ### Identity & Administration
+
 - Active Directory
 - Microsoft 365
 - Azure Active Directory
@@ -27,16 +31,21 @@ My goal is to continuously expand this portfolio with real-world troubleshooting
 - Multi-Factor Authentication (MFA)
 
 ### Virtualization
+
 - Oracle VirtualBox
 - Windows 10 Virtual Machine
 - Ubuntu Virtual Machine
 
 ### Troubleshooting
+
 - Hardware Diagnostics
 - Software Installation
 - Printer Troubleshooting
 - User Account Management
 - Remote Support
+- Network Troubleshooting
+- DNS Troubleshooting
+- File & Folder Access Management
 
 ## 🖥️ IT Support Projects
 
@@ -44,21 +53,47 @@ The following projects demonstrate my hands-on experience in IT Support, system 
 
 ## 🖥️ Help Desk & System Administration
 
-Hands-on Service Desk tickets completed through practical simulations, covering hardware troubleshooting, Active Directory, Microsoft 365 administration, account management, cybersecurity incident response, endpoint support, enterprise IT troubleshooting, email client support, hardware peripherals, and remote connectivity troubleshooting.
+Hands-on Service Desk tickets completed through practical simulations, covering hardware troubleshooting, Active Directory, Microsoft 365 administration, account management, file and folder permissions, employee onboarding, cybersecurity incident response, endpoint support, enterprise IT troubleshooting, email client support, hardware peripherals, DNS, and remote connectivity troubleshooting.
 
 ### Completed Tickets
 
 - **Ticket 01** – Customer PC Won't Turn On
-- **Ticket 02** – Enterprise Identity and Access Management
-- **Ticket 03** – BitLocker Recovery Key
-- **Ticket 04** – VPN Connection Drops Intermittently
-- **Ticket 05** – Incident Response – Suspected Account Compromise
-- **Ticket 06** – Phishing Email Malware Incident Response
-- **Ticket 07** – Browser Scareware Removal
-- **Ticket 08** – Warehouse Laptop Replacement and Deployment
+- **Ticket 02** – BitLocker Recovery Key
+- **Ticket 03** – VPN Connection Drops Intermittently
+- **Ticket 04** – Phishing Email Malware Incident Response
+- **Ticket 05** – Browser Scareware Removal
+- **Ticket 06** – Warehouse Laptop Replacement and Deployment
+- **Ticket 07** – Incident Response – Suspected Account Compromise
+- **Ticket 08** – Enterprise Identity and Access Management
 - **Ticket 09** – Mail Client Attachment Download Failure and Application Repair
 - **Ticket 10** – External Monitors Went Black After Desk Relocation
 - **Ticket 11** – Remote Connection Drops Due to ISP Connectivity Issues
+- **Ticket 12** – DNS Misconfiguration Preventing Internet Access
+- **Ticket 13** – Reset Locked Account
+- **Ticket 14** – New Employee Setup – Create AD Account and Assign Groups
+- **Ticket 15** – User Cannot Open Shared Folder
+- **Ticket 16** – Promotion – Erik Karlsson Moving from Sales to IT
+- **Ticket 17** – Onboarding – New Finance Employee Needs Full Setup
+- **Ticket 18** – Ransomware Incident
+
+### Recent Skills Demonstrated
+
+Recent ServiceDesk and TechSim labs have expanded my practical experience into:
+
+- Active Directory user administration
+- Organizational Unit (OU) management
+- Security group management
+- Account lockout troubleshooting
+- Employee onboarding
+- Role-based access management
+- Microsoft 365 licensing
+- File and shared-folder access
+- DNS troubleshooting
+- Network connectivity troubleshooting
+- Ransomware identification
+- Endpoint isolation
+- Security incident escalation
+- Incident documentation
 
 ## 🖥️ Windows Server Home Lab
 
