@@ -13,6 +13,10 @@ My goal is to continuously expand this portfolio with real-world troubleshooting
 - **Network Technician Career Path Certificate (Cisco Systems Focused)**
 
   - Covered networking fundamentals, switching, routing concepts, TCP/IP, VLANs, and enterprise network troubleshooting.
+ 
+  - **Cisco Networking Academy — IT Support Specialist Career Path**
+
+- Covered IT support fundamentals, troubleshooting methodology, hardware and software support, operating systems, networking, security, customer support, and technical documentation.
 
 ## 🛠 Technical Skills
 
