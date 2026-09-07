@@ -60,6 +60,10 @@ My goal is to continuously expand this portfolio with practical troubleshooting 
 - Group-Based Access Control
 - Departmental File Shares
 - File & Folder Access Troubleshooting
+- Group Policy Management
+- Group Policy Preferences
+- Mapped Network Drive Deployment
+- Item-Level Targeting
 
 ### Networking
 
@@ -71,6 +75,7 @@ My goal is to continuously expand this portfolio with practical troubleshooting 
 - SMB Connectivity
 - VLAN Fundamentals
 - VPN Troubleshooting
+- NTP / Windows Time Troubleshooting
 
 ### Virtualization
 
@@ -91,6 +96,9 @@ My goal is to continuously expand this portfolio with practical troubleshooting 
 - `netstat`
 - `arp`
 - `net use`
+- `gpupdate`
+- `w32tm`
+- `tzutil`
 - Event Viewer
 - Task Manager
 - Remote Desktop (RDP)
@@ -106,8 +114,10 @@ My goal is to continuously expand this portfolio with practical troubleshooting 
 - Network Troubleshooting
 - DNS Troubleshooting
 - File & Folder Access Management
+- Group Policy Troubleshooting
 - Incident Documentation
 - Service Desk Troubleshooting
+- Root Cause Analysis
 - Basic SLA Awareness
 
 ---
@@ -124,7 +134,7 @@ Each project documents the troubleshooting process, configuration steps, command
 
 Hands-on Service Desk tickets completed through practical simulations and home lab scenarios.
 
-The tickets cover hardware troubleshooting, Active Directory, Microsoft 365 administration, account management, file and folder permissions, employee onboarding, cybersecurity incident response, endpoint support, DNS, networking, remote connectivity, and Windows administration.
+The tickets cover hardware troubleshooting, Active Directory, Microsoft 365 administration, account management, file and folder permissions, employee onboarding, cybersecurity incident response, endpoint support, DNS, networking, remote connectivity, Windows administration, SMB file services, Active Directory access control, and Group Policy administration.
 
 ## Completed Tickets
 
@@ -148,12 +158,13 @@ The tickets cover hardware troubleshooting, Active Directory, Microsoft 365 admi
 - **Ticket 18** – Ransomware Incident
 - **Ticket 19** – SMB File Share Permission Troubleshooting
 - **Ticket 20** – Departmental Folder Access Using Active Directory Security Groups
+- **Ticket 21** – Automatic Finance Drive Mapping Using Group Policy
 
 ---
 
-## 🆕 Recent Home Lab Tickets
+# 🆕 Recent Home Lab Tickets
 
-### Ticket 19 — SMB File Share Permission Troubleshooting
+## Ticket 19 — SMB File Share Permission Troubleshooting
 
 Configured and troubleshot an SMB file share between Windows lab systems.
 
@@ -193,7 +204,7 @@ Write access was then successfully verified from the client.
 
 ---
 
-### Ticket 20 — Departmental Folder Access Using Active Directory Security Groups
+## Ticket 20 — Departmental Folder Access Using Active Directory Security Groups
 
 Configured a departmental Finance file share using Active Directory security-group-based access control.
 
@@ -254,7 +265,240 @@ This confirmed both authorised access and write permissions while demonstrating 
 
 ---
 
-## 🔧 Recent Skills Demonstrated
+## Ticket 21 — Automatic Finance Drive Mapping Using Group Policy
+
+Configured an Active Directory Group Policy to automatically deploy the Finance departmental network share to authorised domain users.
+
+A Group Policy Object named:
+
+```text
+Finance Drive Mapping
+```
+
+was linked to the Finance Organizational Unit.
+
+Using **Group Policy Preferences**, the following drive mapping was configured:
+
+```text
+Finance (F:)
+      ↓
+\\10.10.10.21\Finance-Share
+```
+
+### Group Policy Configuration
+
+The mapped drive was configured through:
+
+```text
+User Configuration
+      ↓
+Preferences
+      ↓
+Windows Settings
+      ↓
+Drive Maps
+```
+
+The configuration used:
+
+```text
+Action:       Update
+Location:     \\10.10.10.21\Finance-Share
+Label:        Finance
+Drive Letter: F:
+Reconnect:    Enabled
+```
+
+### Security Group Targeting
+
+Item-Level Targeting was configured so that the mapped drive would only be deployed when the logged-in user was a member of:
+
+```text
+CORP\Finance Users
+```
+
+The deployment design was:
+
+```text
+Finance OU
+      ↓
+Finance Drive Mapping GPO
+      ↓
+User Configuration
+      ↓
+Group Policy Preferences
+      ↓
+CORP\Finance Users
+Item-Level Targeting
+      ↓
+Finance (F:)
+      ↓
+\\10.10.10.21\Finance-Share
+```
+
+### Group Policy Troubleshooting
+
+During deployment testing, the following command was used:
+
+```cmd
+gpupdate /force
+```
+
+Computer Policy initially failed because Windows reported that the workstation clock was not synchronized with a Domain Controller.
+
+The issue was investigated rather than bypassed.
+
+The troubleshooting process included:
+
+```text
+Verify domain connectivity
+      ↓
+Verify DNS configuration
+      ↓
+Verify Windows Time source
+      ↓
+Inspect Domain Controller time configuration
+      ↓
+Compare Windows time zones
+      ↓
+Measure NTP clock offset
+      ↓
+Compare UTC values
+      ↓
+Identify Domain Controller clock discrepancy
+      ↓
+Correct time configuration
+      ↓
+Resynchronize workstation
+      ↓
+Reapply Group Policy
+```
+
+### Diagnostic Tools Used
+
+```text
+w32tm /query /source
+w32tm /query /status
+w32tm /query /configuration
+w32tm /stripchart
+w32tm /resync
+tzutil
+ipconfig
+Get-Date
+gpupdate
+```
+
+The Windows 10 workstation correctly used:
+
+```text
+LAB-DC01.corp.local
+```
+
+as its Windows Time source and:
+
+```text
+10.10.10.10
+```
+
+as its DNS server.
+
+NTP testing using:
+
+```cmd
+w32tm /stripchart /computer:LAB-DC01.corp.local /samples:5 /dataonly
+```
+
+identified a significant underlying clock discrepancy.
+
+The Domain Controller's time configuration was corrected and the workstation was resynchronized.
+
+Group Policy was then successfully refreshed:
+
+```text
+Computer Policy update has completed successfully.
+User Policy update has completed successfully.
+```
+
+### Verification
+
+The policy was tested using:
+
+```text
+CORP\apetrova
+```
+
+After Group Policy successfully applied, Windows automatically displayed:
+
+```text
+Finance (F:)
+```
+
+under **Network locations**.
+
+No manual drive mapping was performed during Anna's session.
+
+Anna successfully opened the mapped drive and accessed the existing Finance content.
+
+A final write test was performed by creating:
+
+```text
+Anna-GPO-write-Test.txt
+```
+
+inside:
+
+```text
+Finance (F:)
+```
+
+The file was successfully created.
+
+This verified the complete access chain:
+
+```text
+CORP\apetrova
+      ↓
+Finance OU
+      ↓
+Finance Drive Mapping GPO
+      ↓
+CORP\Finance Users
+      ↓
+Item-Level Targeting
+      ↓
+Finance (F:)
+      ↓
+SMB Share
+      ↓
+NTFS Modify Permission
+      ↓
+Successful Write Access
+```
+
+### Skills Demonstrated
+
+- Group Policy Management
+- Group Policy Preferences
+- User Configuration policies
+- Mapped network drive deployment
+- Item-Level Targeting
+- Active Directory security groups
+- Organizational Unit-based policy deployment
+- SMB file sharing
+- NTFS permission verification
+- Domain-user policy testing
+- Windows Time Service troubleshooting
+- NTP offset analysis
+- DNS verification
+- `gpupdate` troubleshooting
+- PowerShell administration
+- Command-line diagnostics
+- Root cause analysis
+- End-user access validation
+
+---
+
+# 🔧 Recent Skills Demonstrated
 
 Recent ServiceDesk, TechSim, and Windows home lab projects have expanded my practical experience into:
 
@@ -272,10 +516,19 @@ Recent ServiceDesk, TechSim, and Windows home lab projects have expanded my prac
 - Departmental folder access
 - SMB session troubleshooting
 - File and shared-folder access
+- Group Policy Management
+- Group Policy Preferences
+- Mapped network drive deployment
+- Item-Level Targeting
+- Organizational Unit-based policy deployment
 - DNS troubleshooting
 - Network connectivity troubleshooting
+- Windows Time Service troubleshooting
+- NTP synchronization troubleshooting
+- Group Policy troubleshooting
 - PowerShell administration
 - Command-line troubleshooting
+- Root cause analysis
 - Ransomware identification
 - Endpoint isolation
 - Security incident escalation
@@ -285,7 +538,7 @@ Recent ServiceDesk, TechSim, and Windows home lab projects have expanded my prac
 
 # 🖥️ Windows Server Home Lab
 
-A dedicated Windows Server and Windows client home lab built to strengthen practical system administration, Active Directory, networking, access-control, and troubleshooting skills.
+A dedicated Windows Server and Windows client home lab built to strengthen practical system administration, Active Directory, networking, access-control, Group Policy, and troubleshooting skills.
 
 ## Current Environment
 
@@ -304,7 +557,10 @@ Used for:
 - Organizational Units
 - Security groups
 - Group membership
+- Group Policy Management
+- Group Policy Preferences
 - Domain administration
+- Windows Time administration and troubleshooting
 - PowerShell Active Directory management
 
 ### Windows 10 Lab
@@ -317,6 +573,9 @@ Domain Environment: corp.local
 
 Used for:
 
+- Domain-user testing
+- Group Policy testing
+- Automatically mapped network drives
 - SMB file shares
 - NTFS permissions
 - Network access testing
@@ -325,9 +584,9 @@ Used for:
 
 ---
 
-## Completed Windows Home Lab Projects
+# ✅ Completed Windows Home Lab Projects
 
-### Lab 01 — Active Directory Organizational Units & User Account Management
+## Lab 01 — Active Directory Organizational Units & User Account Management
 
 Practised:
 
@@ -337,7 +596,9 @@ Practised:
 - Department-based identity organisation
 - Active Directory administration
 
-### Ticket 19 — SMB File Share Permission Troubleshooting
+---
+
+## Ticket 19 — SMB File Share Permission Troubleshooting
 
 Practised:
 
@@ -348,7 +609,9 @@ Practised:
 - Network file access
 - Read/write troubleshooting
 
-### Ticket 20 — Departmental Folder Access Using AD Security Groups
+---
+
+## Ticket 20 — Departmental Folder Access Using AD Security Groups
 
 Practised:
 
@@ -362,6 +625,27 @@ Practised:
 
 ---
 
+## Ticket 21 — Automatic Finance Drive Mapping Using Group Policy
+
+Practised:
+
+- Group Policy Management
+- Group Policy Preferences
+- User Configuration policies
+- Mapped network drives
+- Item-Level Targeting
+- Security group targeting
+- OU-based policy deployment
+- Domain-user policy testing
+- `gpupdate` troubleshooting
+- Windows Time Service troubleshooting
+- NTP offset analysis
+- DNS verification
+- End-user access validation
+- Root cause analysis
+
+---
+
 # 🧪 Home Lab Environment
 
 - ✅ Windows Server Virtual Machine
@@ -370,9 +654,17 @@ Practised:
 - ✅ Active Directory Domain Environment
 - ✅ Active Directory Users & Groups
 - ✅ Organizational Units
+- ✅ Security Group-Based Access Control
 - ✅ SMB File Sharing
 - ✅ NTFS Permissions
+- ✅ Share Permissions
 - ✅ Group-Based File Access
+- ✅ Departmental File Shares
+- ✅ Group Policy Management
+- ✅ Group Policy Preferences
+- ✅ Automated Mapped Network Drives
+- ✅ Item-Level Targeting
+- ✅ Windows Time / Domain Time Troubleshooting
 - ✅ Windows Installation & Deployment
 - ✅ Virtual Machine Configuration
 - ✅ ISO Installation & Virtual Disk Management
@@ -387,8 +679,7 @@ The home lab will continue expanding into:
 - 🔄 Domain-Joined Workstation Administration
 - 🔄 DNS Server Administration
 - 🔄 DHCP Server Administration
-- 🔄 Group Policy Management
-- 🔄 Mapped Network Drives
+- 🔄 Advanced Group Policy Configuration
 - 🔄 Advanced Account & Access Troubleshooting
 - 🔄 Server & Network Troubleshooting
 - 🔄 File & Print Services
