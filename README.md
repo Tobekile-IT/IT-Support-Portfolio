@@ -138,28 +138,29 @@ The tickets cover hardware troubleshooting, Active Directory, Microsoft 365 admi
 
 ## Completed Tickets
 
-- **Ticket 01** – Customer PC Won't Turn On
-- **Ticket 02** – BitLocker Recovery Key
-- **Ticket 03** – VPN Connection Drops Intermittently
-- **Ticket 04** – Phishing Email Malware Incident Response
-- **Ticket 05** – Browser Scareware Removal
-- **Ticket 06** – Warehouse Laptop Replacement and Deployment
-- **Ticket 07** – Incident Response – Suspected Account Compromise
-- **Ticket 08** – Enterprise Identity and Access Management
-- **Ticket 09** – Mail Client Attachment Download Failure and Application Repair
-- **Ticket 10** – External Monitors Went Black After Desk Relocation
-- **Ticket 11** – Remote Connection Drops Due to ISP Connectivity Issues
-- **Ticket 12** – DNS Misconfiguration Preventing Internet Access
-- **Ticket 13** – Reset Locked Account
-- **Ticket 14** – New Employee Setup – Create AD Account and Assign Groups
-- **Ticket 15** – User Cannot Open Shared Folder
-- **Ticket 16** – Promotion – Erik Karlsson Moving from Sales to IT
-- **Ticket 17** – Onboarding – New Finance Employee Needs Full Setup
-- **Ticket 18** – Ransomware Incident
-- **Ticket 19** – SMB File Share Permission Troubleshooting
-- **Ticket 20** – Departmental Folder Access Using Active Directory Security Groups
-- **Ticket 21** – Automatic Finance Drive Mapping Using Group Policy
-
+Ticket 01 – Customer PC Won't Turn On
+Ticket 02 – BitLocker Recovery Key
+Ticket 03 – VPN Connection Drops Intermittently
+Ticket 04 – Phishing Email Malware Incident Response
+Ticket 05 – Browser Scareware Removal
+Ticket 06 – Warehouse Laptop Replacement and Deployment
+Ticket 07 – Incident Response – Suspected Account Compromise
+Ticket 08 – Enterprise Identity and Access Management
+Ticket 09 – Mail Client Attachment Download Failure and Application Repair
+Ticket 10 – External Monitors Went Black After Desk Relocation
+Ticket 11 – Remote Connection Drops Due to ISP Connectivity Issues
+Ticket 12 – DNS Misconfiguration Preventing Internet Access
+Ticket 13 – Reset Locked Account
+Ticket 14 – New Employee Setup – Create AD Account and Assign Groups
+Ticket 15 – User Cannot Open Shared Folder
+Ticket 16 – Promotion – Erik Karlsson Moving from Sales to IT
+Ticket 17 – Onboarding – New Finance Employee Needs Full Setup
+Ticket 18 – Ransomware Incident
+Ticket 19 – SMB File Share Permission Troubleshooting
+Ticket 20 – Departmental Folder Access Using Active Directory Security Groups
+Ticket 21 – Automatic Finance Drive Mapping Using Group Policy
+Ticket 22 – Missing Incoming Emails – Degraded Mail Server Investigation
+Ticket 23 – Missing Incoming Emails – Disabled Mailbox Troubleshooting
 ---
 
 # 🆕 Recent Home Lab Tickets
