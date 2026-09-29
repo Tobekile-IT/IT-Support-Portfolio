@@ -1,10 +1,10 @@
 # Tobekile Mazula | IT Support & Systems Portfolio
 
-I'm an aspiring IT Support professional building hands-on experience in Windows administration, Active Directory, Microsoft 365, networking, virtualization, and cybersecurity incident response through practical simulations and home lab projects.
+I'm an aspiring IT Support professional building hands-on experience in Windows administration, Active Directory, Microsoft 365, networking, virtualization, hardware troubleshooting, and cybersecurity incident response through home labs, practical simulations, and independent real-world IT support.
 
-I am currently expanding my skills toward Network Engineering through structured troubleshooting scenarios, Windows Server administration, networking labs, and enterprise-style support simulations.
+I am currently expanding my skills toward Network Engineering through structured troubleshooting scenarios, Windows Server administration, networking labs, enterprise-style support simulations, and hands-on support of real user devices.
 
-My goal is to continuously expand this portfolio with practical troubleshooting scenarios, system administration tasks, networking projects, and home lab implementations that demonstrate my technical development and problem-solving process.
+My goal is to continuously expand this portfolio with practical troubleshooting scenarios, system administration tasks, networking projects, home lab implementations, and real-world support cases that demonstrate my technical development and problem-solving process.
 
 ---
 
@@ -26,7 +26,6 @@ My goal is to continuously expand this portfolio with practical troubleshooting 
 
 ## 📚 Currently Studying
 
-- Cisco CCNA / Introduction to Networks
 - ITIL 4
 
 ---
@@ -107,10 +106,15 @@ My goal is to continuously expand this portfolio with practical troubleshooting 
 ### IT Support
 
 - Hardware Diagnostics
+- Desktop Hardware Inspection
+- RAM Troubleshooting & Reseating
+- Display Connectivity Troubleshooting
 - Software Installation
+- Operating System Upgrade Assessment
 - Printer Troubleshooting
 - User Account Management
 - Remote Support
+- On-Site End-User Support
 - Network Troubleshooting
 - DNS Troubleshooting
 - File & Folder Access Management
@@ -118,7 +122,160 @@ My goal is to continuously expand this portfolio with practical troubleshooting 
 - Incident Documentation
 - Service Desk Troubleshooting
 - Root Cause Analysis
+- Troubleshooting Escalation & Referral
 - Basic SLA Awareness
+
+---
+
+# 🌍 Real-World IT Support Experience
+
+Alongside my home lab and simulated Service Desk projects, I have started providing small-scale independent IT support to gain practical experience working with real users and real devices.
+
+These cases differ from the simulated tickets in this portfolio because the problems, device history, user information, and outcomes were not predetermined.
+
+Customer-identifying information is excluded from all documentation.
+
+---
+
+## Case 001 — Desktop Powers On but No Display
+
+Performed on-site troubleshooting for a desktop computer that powered on but produced no display output.
+
+### Reported Issue
+
+The customer reported that the desktop computer powered on but nothing appeared on the monitor.
+
+Based on the information available before the visit, possible causes included the display connection, VGA cable, RAM, or another hardware-related issue preventing normal startup/display output.
+
+A spare VGA cable was brought to the customer site to help test the display connection.
+
+### Troubleshooting Performed
+
+- Verified the reported no-display condition
+- Tested the computer using an alternative VGA cable
+- Confirmed that replacing the VGA cable did not restore display output
+- Opened and inspected the desktop
+- Removed and reseated the RAM
+- Inspected the internal hardware and connections
+- Gathered additional device history from the customer
+
+The computer continued to power on without producing display output.
+
+### Additional Information Discovered
+
+During further discussion, additional device history became available.
+
+The computer had previously suffered electrical damage and had been taken to another repair provider.
+
+Following that repair, the computer worked for a period of time before eventually failing again.
+
+This information significantly changed the troubleshooting context.
+
+### Decision / Escalation
+
+Because the computer had previously suffered electrical damage and had already undergone repair work, further invasive troubleshooting was stopped.
+
+The customer was advised to first contact the previous repair provider and determine whether the earlier repair was still covered before additional work was performed.
+
+### Status
+
+**Referred to previous repair provider pending warranty/repair assessment.**
+
+### Key Lesson
+
+The initial troubleshooting hypothesis was based on the information available before arriving on site.
+
+Once additional device history became available, the troubleshooting approach changed.
+
+This case demonstrated the importance of:
+
+- Gathering complete device history
+- Asking follow-up questions
+- Testing hypotheses rather than assuming a diagnosis
+- Adjusting troubleshooting when new evidence appears
+- Considering previous repair work before making additional changes
+- Knowing when to stop troubleshooting
+- Escalating or referring a case when appropriate
+
+A troubleshooting hypothesis does not need to be correct the first time. It needs to change when the evidence changes.
+
+---
+
+## Case 002 — Windows 7 to Windows 10 Upgrade
+
+Worked with a second desktop computer requiring an operating-system upgrade from Windows 7 to Windows 10.
+
+### Reported Requirement
+
+The computer was running Windows 7 and required assessment for an upgrade to Windows 10.
+
+### Initial Assessment
+
+Before proceeding with the operating-system change, the existing Windows installation and system information were reviewed to better understand the machine and its hardware environment.
+
+This was important because the computer was an older system and any operating-system change needed to take the existing hardware and software environment into consideration.
+
+### Support Process
+
+The case involved:
+
+- Reviewing the existing Windows 7 environment
+- Checking system information
+- Assessing the existing hardware
+- Considering operating-system compatibility
+- Planning the Windows upgrade
+- Considering the impact of the change on the user's existing system
+
+### Skills Demonstrated
+
+- Windows operating-system assessment
+- System information review
+- Legacy Windows environment support
+- Hardware/software compatibility awareness
+- Operating-system upgrade planning
+- End-user device support
+- Change-impact awareness
+
+### Key Lesson
+
+An operating-system upgrade is not simply about starting an installer.
+
+Before changing the operating system on a real user's computer, it is important to understand:
+
+- Existing hardware
+- Current operating system
+- Software environment
+- Compatibility requirements
+- User data considerations
+- Potential impact of the change
+
+This case provided practical exposure to assessing an older real-world Windows environment before making operating-system changes.
+
+---
+
+## Real-World Support Documentation Process
+
+Real-world cases are documented using the following troubleshooting structure:
+
+```text
+Issue
+   ↓
+Information Gathering
+   ↓
+Initial Hypothesis
+   ↓
+Troubleshooting
+   ↓
+Diagnosis / Assessment
+   ↓
+Resolution or Escalation
+   ↓
+Testing
+   ↓
+Lessons Learned
+```
+
+These cases are maintained separately from simulated Help Desk tickets so that the type of experience represented in this portfolio remains clear.
 
 ---
 
@@ -138,29 +295,30 @@ The tickets cover hardware troubleshooting, Active Directory, Microsoft 365 admi
 
 ## Completed Tickets
 
-Ticket 01 – Customer PC Won't Turn On
-Ticket 02 – BitLocker Recovery Key
-Ticket 03 – VPN Connection Drops Intermittently
-Ticket 04 – Phishing Email Malware Incident Response
-Ticket 05 – Browser Scareware Removal
-Ticket 06 – Warehouse Laptop Replacement and Deployment
-Ticket 07 – Incident Response – Suspected Account Compromise
-Ticket 08 – Enterprise Identity and Access Management
-Ticket 09 – Mail Client Attachment Download Failure and Application Repair
-Ticket 10 – External Monitors Went Black After Desk Relocation
-Ticket 11 – Remote Connection Drops Due to ISP Connectivity Issues
-Ticket 12 – DNS Misconfiguration Preventing Internet Access
-Ticket 13 – Reset Locked Account
-Ticket 14 – New Employee Setup – Create AD Account and Assign Groups
-Ticket 15 – User Cannot Open Shared Folder
-Ticket 16 – Promotion – Erik Karlsson Moving from Sales to IT
-Ticket 17 – Onboarding – New Finance Employee Needs Full Setup
-Ticket 18 – Ransomware Incident
-Ticket 19 – SMB File Share Permission Troubleshooting
-Ticket 20 – Departmental Folder Access Using Active Directory Security Groups
-Ticket 21 – Automatic Finance Drive Mapping Using Group Policy
-Ticket 22 – Missing Incoming Emails – Degraded Mail Server Investigation
+Ticket 01 – Customer PC Won't Turn On  
+Ticket 02 – BitLocker Recovery Key  
+Ticket 03 – VPN Connection Drops Intermittently  
+Ticket 04 – Phishing Email Malware Incident Response  
+Ticket 05 – Browser Scareware Removal  
+Ticket 06 – Warehouse Laptop Replacement and Deployment  
+Ticket 07 – Incident Response – Suspected Account Compromise  
+Ticket 08 – Enterprise Identity and Access Management  
+Ticket 09 – Mail Client Attachment Download Failure and Application Repair  
+Ticket 10 – External Monitors Went Black After Desk Relocation  
+Ticket 11 – Remote Connection Drops Due to ISP Connectivity Issues  
+Ticket 12 – DNS Misconfiguration Preventing Internet Access  
+Ticket 13 – Reset Locked Account  
+Ticket 14 – New Employee Setup – Create AD Account and Assign Groups  
+Ticket 15 – User Cannot Open Shared Folder  
+Ticket 16 – Promotion – Erik Karlsson Moving from Sales to IT  
+Ticket 17 – Onboarding – New Finance Employee Needs Full Setup  
+Ticket 18 – Ransomware Incident  
+Ticket 19 – SMB File Share Permission Troubleshooting  
+Ticket 20 – Departmental Folder Access Using Active Directory Security Groups  
+Ticket 21 – Automatic Finance Drive Mapping Using Group Policy  
+Ticket 22 – Missing Incoming Emails – Degraded Mail Server Investigation  
 Ticket 23 – Missing Incoming Emails – Disabled Mailbox Troubleshooting
+
 ---
 
 # 🆕 Recent Home Lab Tickets
@@ -501,7 +659,7 @@ Successful Write Access
 
 # 🔧 Recent Skills Demonstrated
 
-Recent ServiceDesk, TechSim, and Windows home lab projects have expanded my practical experience into:
+Recent ServiceDesk, TechSim, Windows home lab, and real-world support cases have expanded my practical experience into:
 
 - Active Directory user administration
 - Organizational Unit (OU) management
@@ -534,6 +692,15 @@ Recent ServiceDesk, TechSim, and Windows home lab projects have expanded my prac
 - Endpoint isolation
 - Security incident escalation
 - Incident documentation
+- On-site end-user support
+- Desktop hardware inspection
+- RAM troubleshooting and reseating
+- Display connectivity troubleshooting
+- Legacy Windows system assessment
+- Operating-system upgrade assessment
+- Customer information gathering
+- Device repair-history assessment
+- Troubleshooting escalation and referral
 
 ---
 
@@ -721,8 +888,6 @@ www.linkedin.com/in/tobekile-mazula-39b04a1ba
 
 💻 **GitHub:**  
 https://github.com/Tobekile-IT
-
----
 
 ⭐ **Thank you for visiting my portfolio.**
 
