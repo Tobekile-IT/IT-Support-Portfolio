@@ -1,6 +1,6 @@
 # Tobekile Mazula | IT Support & Systems Portfolio
 
-I'm an aspiring IT Support professional building hands-on experience in Windows administration, Active Directory, Microsoft 365, networking, virtualization, hardware troubleshooting, and cybersecurity incident response through home labs, practical simulations, and independent real-world IT support.
+I'm an aspiring IT Support professional building hands-on experience in Windows administration, Active Directory, Microsoft Azure, Microsoft Entra ID, Microsoft 365, networking, virtualization, hardware troubleshooting, and cybersecurity incident response through home labs, practical simulations, and independent real-world IT support.
 
 I am currently expanding my skills toward Network Engineering through structured troubleshooting scenarios, Windows Server administration, networking labs, enterprise-style support simulations, and hands-on support of real user devices.
 
@@ -48,6 +48,11 @@ My goal is to continuously expand this portfolio with practical troubleshooting 
 - Security Group Management
 - Password Resets & Account Unlocks
 - Microsoft 365 Administration
+- Microsoft Azure Fundamentals & Cloud Administration
+- Microsoft Entra ID User Administration
+- Microsoft Entra Security Group Management
+- Cloud User Onboarding & Group Membership Verification
+- Least-Privilege Administration
 - Multi-Factor Authentication (MFA)
 
 ### Windows Server & File Services
@@ -249,6 +254,10 @@ Before changing the operating system on a real user's computer, it is important 
 - User data considerations
 - Potential impact of the change
 
+### Outcome
+
+**The Windows 10 upgrade was not performed.** The desktop had only **2 GB of RAM**, raising significant performance concerns. Rather than proceed with an upgrade likely to deliver a poor user experience, I explained the limitations and recommended against upgrading the machine in its current configuration.
+
 This case provided practical exposure to assessing an older real-world Windows environment before making operating-system changes.
 
 ---
@@ -317,7 +326,8 @@ Ticket 19 – SMB File Share Permission Troubleshooting
 Ticket 20 – Departmental Folder Access Using Active Directory Security Groups  
 Ticket 21 – Automatic Finance Drive Mapping Using Group Policy  
 Ticket 22 – Missing Incoming Emails – Degraded Mail Server Investigation  
-Ticket 23 – Missing Incoming Emails – Disabled Mailbox Troubleshooting
+Ticket 23 – Missing Incoming Emails – Disabled Mailbox Troubleshooting  
+Ticket 24 – Intermittent Laptop Power Failure & Hardware Replacement
 
 ---
 
@@ -657,6 +667,25 @@ Successful Write Access
 
 ---
 
+## Ticket 24 — Intermittent Laptop Power Failure & Hardware Replacement
+
+Investigated a simulated Finance user's laptop experiencing intermittent shutdowns. Windows Event Viewer showed repeated critical **Kernel-Power Event ID 41** entries. After reviewing the symptoms and evidence, the support workflow proceeded with replacement hardware.
+
+### Work Performed
+
+- Reviewed reported unexpected shutdowns and relevant Windows event logs
+- Identified repeated Kernel-Power 41 events (evidence of unexpected shutdowns, not a standalone proof of the root cause)
+- Followed the simulator's hardware replacement workflow
+- Prepared a replacement laptop through server imaging
+- Updated the IT asset management records
+- Completed the simulated service desk ticket
+
+### Key Lesson
+
+Use system logs alongside the user's symptoms to guide troubleshooting, and keep device replacement and asset records aligned. Do not interpret Kernel-Power 41 alone as a confirmed diagnosis of a specific hardware component.
+
+---
+
 # 🔧 Recent Skills Demonstrated
 
 Recent ServiceDesk, TechSim, Windows home lab, and real-world support cases have expanded my practical experience into:
@@ -701,6 +730,46 @@ Recent ServiceDesk, TechSim, Windows home lab, and real-world support cases have
 - Customer information gathering
 - Device repair-history assessment
 - Troubleshooting escalation and referral
+
+---
+
+# ☁️ Cloud Labs — Microsoft Azure & Entra ID
+
+Hands-on cloud administration exercises are documented separately from simulated helpdesk **Tickets** and real-customer **Cases**. The public Cloud Lab sequence begins at **01**; the private learning vault retains its own chronological lab numbering.
+
+## Cloud Lab 01 — Microsoft Entra ID User and Group Access Management
+
+**Platform:** Microsoft Entra admin center  
+**Completed:** 16 October 2026  
+**Focus:** Cloud identity administration, security groups, onboarding, verification and least privilege
+
+### Scenario
+
+Review an existing Finance department security group, create a separate IT Support group, onboard a fictional IT Support employee and validate the resulting group membership and account configuration.
+
+### Work Performed
+
+- Inspected the existing **Finance Users** security group and confirmed **Assigned** membership
+- Verified **Lerato Mokeana** as a Finance Users member and reviewed the group's owner and application assignment list
+- Reviewed Lerato's account status, job information and absence of directory administrator roles
+- Created the **IT Support Users** security group with **Assigned** membership and no Entra role-assignable configuration
+- Created a fictional employee account for **Sipho Dlamini** with department **IT Support** and job title **Junior IT Support Technician**
+- Assigned Sipho to **IT Support Users**, then verified his account status and group membership
+- Confirmed Sipho had **no directory roles assigned**
+- Practised removing Sipho's group membership, verified that the group became empty, and restored his membership
+- Captured six screenshots documenting the final group and user configurations
+
+### Verified Outcome
+
+Two departmental security groups were present, and Sipho's test account was enabled and assigned to IT Support Users without Entra directory administrator roles. The group removal and restoration exercise was verified in the portal. **Application/resource access was not configured or tested in this lab.**
+
+### Lab Files
+
+- [Cloud Lab 01 — Full Report](Cloud-Labs/Cloud-Lab-01-Entra-ID-User-and-Group-Management/Cloud_Lab_01_Entra_ID_User_and_Group_Management.pdf)
+- [Cloud Lab 01 — Technical README](Cloud-Labs/Cloud-Lab-01-Entra-ID-User-and-Group-Management/README.md)
+- [Cloud Lab 01 — Evidence Screenshots](Cloud-Labs/Cloud-Lab-01-Entra-ID-User-and-Group-Management/Screenshots/)
+
+> These relative links will work after the Cloud Lab 01 files are uploaded to the corresponding folder paths in this repository. Screenshots intended for public use should have tenant and object identifiers redacted.
 
 ---
 
