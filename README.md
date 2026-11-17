@@ -328,7 +328,7 @@ Ticket 21 – Automatic Finance Drive Mapping Using Group Policy
 Ticket 22 – Missing Incoming Emails – Degraded Mail Server Investigation  
 Ticket 23 – Missing Incoming Emails – Disabled Mailbox Troubleshooting  
 Ticket 24 – Intermittent Laptop Power Failure & Hardware Replacement
-
+Ticket 25 – Active Directory Account Creation Failure – Domain Controller Disk Space Exhaustion
 ---
 
 # 🆕 Recent Home Lab Tickets
